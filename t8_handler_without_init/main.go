@@ -51,6 +51,12 @@ func main() {
 
 func changeHandler(k *kuma) {
 	k.HandleEat(func(action int, food string) {
-		log.Println(k.name +" don't like this :", food)
+		log.Println(k.name+" don't like this :", food)
 	})
 }
+
+// result:
+
+// wake up handler is nil !
+// action: 0 thank you for your  meat
+// AloHa don't like this : meat
